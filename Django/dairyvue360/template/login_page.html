@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+    
+        <div class="heading">
+            <img src="{% static 'images/logo.webp' %}" alt="Logo" class="logo">
+            <h2>Login</h2>
+            
+        </div>
+
+        <div class="inputContainer">
+            <input type="email" class="inputField" id="email" placeholder="Email">
+        </div>
+        
+        <div class="inputContainer">
+            <input type="password" class="inputField" id="password" placeholder="Password">
+        </div>
+
+        <button id="button">Submit</button>
+        
+        <a class="forgotLink" href="#">Forgot your password?</a>
+        <div class="registerText">Don't have an account? <a href="http://localhost:8000/signup/">Register here</a></div>
+    </div>
+</body>
+</html>
